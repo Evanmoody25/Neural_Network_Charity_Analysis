@@ -114,3 +114,57 @@ check image on part 3
 
 ![image](https://user-images.githubusercontent.com/89880015/150660976-d4c930df-ceca-4b0b-adf5-912a8efa9ab0.png)
 
+# Deliverable 3: Optimize the Model
+
+Optimize your model in order to achieve a target predictive accuracy higher than 75% by using any or all of the following:
+
+Dropping more or fewer columns.
+
+Creating more bins for rare occurrences in columns.
+
+Increasing or decreasing the number of values for each bin.
+
+Adding more neurons to a hidden layer.
+
+Adding more hidden layers.
+
+Using different activation functions for the hidden layers.
+
+Adding or reducing the number of epochs to the training regimen.
+
+# DELIVERABLE RESULTS:
+
+Data Preprocessing
+
+-For this analysis and model, the target is held in IS_SUCCESSFUL field.
+
+The following variable(s) should be considered on features model
+
+* ORGANIZATION
+* STATUS
+* INCOME_AMT
+* SPECIAL_CONSIDERATIONS
+* ASK_AMT
+* APPLICATION_TYPE
+* AFFILIATION
+* CLASSIFICATION
+* USE_CASE
+
+The following variable(s) should be removed from input and data.
+* NAME
+* EIN
+
+Model Configuration:
+
+hidden_nodes_layer1 = 80
+hidden_nodes_layer2 = 30
+hidden_nodes_layer3 = 10
+number_input_features = 43
+
+This model acheived 53.8% accuracy with several attempts to incraese the accuracy including:
+* Increasing the number of hidden nodes in layer 1 (3 X number of input features)
+* Increasing the number of hidden layers to include a 3rd
+* Changing the activation functions: tried linear, tanh, sigmoid for a combination of hidden layers and output layer
+
+
+
